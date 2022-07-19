@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+
+    <div class="container">
+      <section class="products">
+        <h3>Vegetables</h3>
+
+        <div class="product">
+          <img src="img/potato.png" alt="potato" />
+          <div class="name">
+            <h4>Potato</h4>
+            <p class="price">$10</p>
+          </div>
+          <div class="amount">
+            <input type="number" min="0" value="0" />
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="img/tomato.png" alt="tomato" />
+          <div class="name">
+            <h4>Tomato</h3>
+            <p class="price">$20</p>
+          </div>
+          <div class="amount">
+            <input type="number" min="0" value="0" />
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="img/carrot.png" alt="carrot" />
+          <div class="name">
+            <h4>Carrot</h4>
+            <p class="price">$30</p>
+          </div>
+          <div class="amount">
+            <input type="number" min="0" value="0" />
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </section>
+      <section class="cart">
+        <h3>Cart</h3>
+        <div class="cart-items"></div>
+        <div class="total"></div>
+      </section>
+    </div>
+  </body>
+</html>

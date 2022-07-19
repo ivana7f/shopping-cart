@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("img/background.jpeg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  height: 90vh;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+h3 {
+  margin: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 800px;
+  margin: auto;
+  border: 2px solid brown;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 20px;
+}
+
+.cart {
+  background-image: url("img/cart.png");
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.product {
+  display: flex;
+  gap: 30px;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px #666 solid;
+}
+
+.product:last-child {
+  border-bottom: none;
+}
+
+.container .product img {
+  width: 20%;
+}
+
+.products {
+  border-right: 2px solid brown;
+}
+
+.product input {
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 3px;
+}
+
+.product button {
+  display: block;
+  width: 50px;
+}
+
+.product .amount {
+  width: 30%;
+}
+
+.product .name {
+  width: 70%;
+}
+
+.cart-items {
+  margin: 10px;
+}
+
+.total {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 22px;
+}
